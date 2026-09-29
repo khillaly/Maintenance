@@ -5,21 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHUB Fleet Maintenance Hub</title>
     <style>
-        body { font-family: sans-serif; background: linear-gradient(135deg, #eef4fa 0%, #f5f7fa 100%); display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }
-        .hub { background: white; padding: 40px; border-radius: 30px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15); text-align: center; max-width: 400px; width: 100%; }
-        h1 { color: #0b3b5c; margin-bottom: 30px; font-size: 1.8rem; }
-        .btn { display: block; padding: 18px; margin-bottom: 15px; border-radius: 40px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: 0.2s; color: white; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: linear-gradient(135deg, #eef4fa 0%, #f5f7fa 100%); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            padding: 20px; 
+        }
+        .hub { 
+            background: white; 
+            padding: 40px 30px; 
+            border-radius: 30px; 
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15); 
+            text-align: center; 
+            max-width: 420px; 
+            width: 100%; 
+        }
+        .hub h1 { 
+            color: #0b3b5c; 
+            margin-bottom: 8px; 
+            font-size: 1.8rem; 
+            font-weight: 800;
+        }
+        .hub p {
+            color: #5b7b96;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+        .btn { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 18px; 
+            margin-bottom: 16px; 
+            border-radius: 40px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.1rem; 
+            transition: 0.2s; 
+            color: white; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
         .btn-gen { background: #1e4a6d; } .btn-gen:hover { background: #0f3852; }
         .btn-ac { background: #2a6b96; } .btn-ac:hover { background: #1e4a6d; }
         .btn-ref { background: #b33a3a; } .btn-ref:hover { background: #8f2929; }
+        .footer { margin-top: 30px; font-size: 0.75rem; color: #9cb9d0; }
     </style>
 </head>
 <body>
     <div class="hub">
         <h1>🛠️ CHUB Fleet Hub</h1>
-        <a href="YOUR_GENERATOR_URL" class="btn btn-gen">⚡ Generator Maintenance</a>
-        <a href="YOUR_AC_URL" class="btn btn-ac">❄️ Air Conditioner Maintenance</a>
-        <a href="YOUR_REFRIGERATOR_URL" class="btn btn-ref">🧊 Refrigerator Maintenance</a>
+        <p>Select a system to perform Preventive Maintenance</p>
+        
+        <a href="https://khillaly.github.io/Generator/" class="btn btn-gen">⚡ Generator Maintenance</a>
+        <a href="https://khillaly.github.io/AirConditioner/" class="btn btn-ac">❄️ Air Conditioner Maintenance</a>
+        <a href="https://khillaly.github.io/Refrigerators-freezers/" class="btn btn-ref">🧊 Refrigerator Maintenance</a>
+        
+        <div class="footer">© 2026 Hillaly KUBWIMANA — All rights reserved</div>
     </div>
 </body>
 </html>
